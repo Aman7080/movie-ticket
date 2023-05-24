@@ -29,10 +29,6 @@ function App() {
   });
 
   useEffect(() => {
-    const movies = JSON.parse(localStorage.getItem("movie") as string);
-    if (movies) {
-      setSelectedMovie(movies);
-    }
     const slot = JSON.parse(localStorage.getItem("slot") as string);
     if (slot) {
       setSelectedSlot(slot);
@@ -167,7 +163,7 @@ function App() {
           {seats?.map((seat, index) => (
             <div
               className={`seat-column ${
-                selectedSlot === seat ? "seat-column-selected" : ""
+                selectedSeat === seat ? "seat-column-selected" : ""
               }`}
               key={index}
               onClick={() => handleSeatClick(seat)}

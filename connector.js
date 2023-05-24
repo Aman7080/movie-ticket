@@ -1,5 +1,8 @@
-const mongoURI =
-  "mongodb+srv://movie:movie@cluster0.ydpnlle.mongodb.net/movies?retryWrites=true&w=majority";
+const dotenv = require("dotenv");
+dotenv.config();
+
+const mongoURI = process.env.MONGOURI;
+
 const mongoose = require("mongoose");
 
 mongoose
