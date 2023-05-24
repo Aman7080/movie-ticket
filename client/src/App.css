@@ -80,6 +80,7 @@ input {
   margin-top: 80px;
   margin-right: 10px;
   height: max-content;
+  line-height: 10px;
 }
 
 @media (max-width:750px){
