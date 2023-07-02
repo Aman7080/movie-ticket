@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha '__tests__/*.test.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
-    "start": "node ./index.js",
-    "dev": "cd client && vite",
-    "build": "cd client && tsc && vite build",
-    "preview": "cd client && vite preview"
+    "start": "node ./index.js"
   },
   "author": "Aman Kumar",
   "license": "ISC",

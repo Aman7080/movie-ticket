@@ -45,7 +45,7 @@ function App() {
   }, [selectedMovie]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/booking")
+    fetch("https://movie-ticket-ovzt.onrender.com/api/booking")
       .then((response) => response.json())
       .then((data) => {
         // Extract the required data from the API response
@@ -89,7 +89,7 @@ function App() {
     console.log("Movie = " + selectedMovie);
     console.log("Slot = " + selectedSlot);
     console.log("total Seat = " + totalSeat);
-    fetch("http://localhost:8080/api/booking", {
+    fetch("https://movie-ticket-ovzt.onrender.com/api/booking", {
       method: "POST",
       headers: {
         Accept: "application/json",
